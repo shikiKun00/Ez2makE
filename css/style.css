@@ -18,8 +18,279 @@ button {
     color: inherit;
 }
 
+:root {
+    --background: rgb(55, 48, 79);
+    --card: rgb(66, 55, 100);
+    --btn: rgb(57, 38, 104);
+    --btn-light: rgb(66, 49, 138);
+    scroll-behavior: smooth;
+}
+
 body {
     color: white;
-    background-color: rgb(72, 46, 92);
+    font-size: 16px;
+    background-color: var(--background);
+    font-family: "Rubik";
+}
+
+body .container {
+    display: grid;
+    row-gap: 19rem;
+}
+
+body .container span {
+    color: rgb(136, 84, 209);
+}
+
+.container section.foodsRecipe img {
+    border-radius: 0.6rem;
+    height: 300px;
+    object-fit: cover;
+}
+
+body .container section .recipe {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: none;
+    padding: 0.5rem;
+    align-items: start;
+    overflow-y: scroll;
+}
+
+body .container section.foodsRecipe .contents .recipe .wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        "h4"
+        "ingridient"
+        "how-to-make"
+        "closeBtn";
+    row-gap: 0.8rem;
+}
+
+body .container section.foodsRecipe .contents .recipe .wrapper h4 {
+    grid-area: h4;
+}
+
+body .container section.foodsRecipe .contents .recipe .wrapper .ingridient {
+    grid-area: ingridient;
+    line-height: 1.7rem;
+}
+
+body .container section.foodsRecipe .contents .recipe .wrapper .how-to-make {
+    grid-area: how-to-make;
+}
+
+body .container section.foodsRecipe .contents .recipe .wrapper .how-to-make p {
+    margin: 0.6rem 0;
+}
+
+body
+    .container
+    section.foodsRecipe
+    .contents
+    .recipe
+    .wrapper
+    .how-to-make
+    p:first-child {
+    margin: 0;
+}
+
+body
+    .container
+    section.foodsRecipe
+    .contents
+    .recipe
+    .wrapper
+    .how-to-make
+    p:last-child {
+    margin: 0;
+}
+
+body .container section.foodsRecipe .contents .recipe .wrapper .close {
+    grid-area: closeBtn;
+    justify-self: center;
+    align-self: center;
+    padding: 0.5rem 1.6rem;
+    background-color: rgba(99, 22, 22, 0.7);
+    border-radius: 0.4rem;
 }
 /* end reset */
+
+/* navbar */
+navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9rem 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(105, 55, 190, 0.8);
+    transition: 0.4s;
+    z-index: 99;
+    backdrop-filter: blur(10px);
+}
+
+navbar .navLinks {
+    position: absolute;
+    right: -100%;
+    display: grid;
+    row-gap: 4rem;
+    width: 65vw;
+    padding: 2rem;
+    justify-items: end;
+    border-radius: 0 0 0.9rem 0.9rem;
+    border-bottom: 2px solid var(--btn);
+    border-left: 2px solid var(--btn);
+    transition: 0.5s;
+    background-color: rgba(66, 49, 138, 0.5);
+}
+
+navbar .navLinks.active {
+    right: 0;
+}
+/* end navbar */
+
+/* hero section */
+.hero {
+    position: relative;
+}
+
+.hero .main-text {
+    top: 0;
+    width: 65%;
+    height: 99%;
+    padding: 4rem 0.7rem;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero .main-text .wrapper {
+    display: grid;
+    row-gap: 2rem;
+}
+
+.hero .main-text p {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    color: rgb(200, 200, 200);
+}
+
+.hero .main-text .wrapper a {
+    margin-top: 2rem;
+    background-color: rgba(94, 44, 209, 0.2);
+    padding: 0.6rem 0.9rem;
+    border-radius: 0.4rem;
+    border: 2px solid var(--btn-light);
+    justify-self: start;
+    color: rgb(233, 233, 233);
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+/* end hero section */
+
+/* intruction */
+.instruction {
+    display: grid;
+    row-gap: 0.9rem;
+    text-align: center;
+    background-color: var(--btn);
+    padding: 1rem;
+}
+
+.instruction .links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    text-align: center;
+    row-gap: 1rem;
+}
+
+/* end intruction */
+
+/* foods recipe section */
+.container section.foodsRecipe {
+    display: grid;
+    row-gap: 3rem;
+    padding: 1rem 1.2rem;
+}
+
+.container section.foodsRecipe .contents {
+    display: grid;
+    row-gap: 5rem;
+}
+
+.container section.foodsRecipe .contents .content {
+    display: grid;
+    row-gap: 1rem;
+    grid-template-areas:
+        "image image"
+        "name btn"
+        "desc desc";
+    border: 2px solid var(--btn-light);
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 0.4rem;
+}
+
+.container section.foodsRecipe .contents .content img {
+    grid-area: image;
+}
+
+.container section.foodsRecipe .contents .content h4 {
+    grid-area: name;
+    justify-self: start;
+}
+
+.container section.foodsRecipe .contents .content .show-recipe-btn {
+    grid-area: btn;
+    justify-self: end;
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.3rem;
+    border: 0.15rem solid var(--btn-light);
+}
+
+.container section.foodsRecipe .contents .content p {
+    grid-area: desc;
+}
+/* end foods recipe section */
+
+.modal-box-author {
+    position: fixed;
+    top: -100%;
+    width: 90%;
+    padding: 3rem 1rem;
+    justify-self: center;
+    background-color: rgba(66, 49, 138, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 0 0 1.4rem 1.4rem;
+    transition: 0.5s;
+    display: grid;
+    row-gap: 0.7rem;
+}
+
+.modal-box-author .close-modal-box {
+    border: 2px solid var(--background);
+    color: red;
+    justify-self: center;
+    width: 3rem;
+    height: 2rem;
+}
+
+/* footer */
+footer {
+    display: grid;
+    row-gap: 1rem;
+    text-align: center;
+    padding: 1.2rem 1.4rem;
+    background-color: var(--btn-light);
+}
+/* end footer */

@@ -1,0 +1,56 @@
+@media (min-width: 1024px) {
+    :root {
+        font-size: 25px;
+    }
+
+    navbar {
+        display: grid;
+        column-gap: 0;
+        justify-items: center;
+        grid-template-columns: 0.5fr 4fr;
+    }
+
+    navbar .navLinks {
+        width: 100%;
+        position: static;
+        display: flex;
+        column-gap: 0.5rem;
+        flex-grow: 1;
+        padding: 0 0.5rem;
+        font-size: 0.7rem;
+        text-align: center;
+        justify-content: end;
+        background: none;
+        border: none;
+    }
+
+    navbar .navLinks span {
+        display: none;
+    }
+
+    navbar .opnNavBtn {
+        display: none;
+    }
+
+    .hero {
+        height: 550px;
+        overflow: hidden;
+        font-size: 3rem;
+    }
+
+    .hero .main-text {
+        height: 100%;
+    }
+    
+    .instruction {
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+    
+    .container section.foodsRecipe .contents {
+        align-items: center;
+        justify-items: center;
+        column-gap: 0.5rem;
+        grid-template-columns: 0.8fr 0.8fr;
+    }
+}

@@ -1,25 +1,1182 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <!-- css -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="css/screen.css">
-    
-    <title>Ez2makE</title>
-</head>
-<body>
-    
-    
-    <div class="container">
-        
-    </div>
-    
-    <!-- script -->
-    <script src="./main.js" type="text/javascript" charset="utf-8"></script>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <!-- css -->
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/screen.css" />
+
+        <!-- fonts google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- feather icon -->
+        <script src="https://unpkg.com/feather-icons"></script>
+
+        <title>Ez2makE</title>
+    </head>
+    <body>
+        <div class="container">
+            <navbar>
+                <h2>Ez<span>"2"</span>makE</h2>
+                <button
+                    class="opnNavBtn"
+                    type="button"
+                    data-feather="menu"
+                ></button>
+                <div class="navLinks">
+                    <a href="#">🤷‍♂️ what's this page?</a>
+                    <a href="#creator">👨 creator's</a>
+                    <a href="#Japanese">🇯🇵 Japanese <span>Foods</span></a>
+                    <a href="#American">🇺🇸 American <span>Foods</span></a>
+                    <a href="#Korean">🇰🇷 Korean <span>Foods</span></a>
+                </div>
+            </navbar>
+            <section class="hero">
+                <img
+                    data-author="shikikun00.github.io"
+                    src="./images/image_hero.jpg"
+                    alt="images hero"
+                />
+                <div class="main-text">
+                    <div class="wrapper">
+                        <h2>Ez<span>2</span>makE</h2>
+                        <p>
+                            Welcome, this page shows how to make EaZy foods that
+                            can be make in your home, you can make your own food
+                            by following recipes that's show below
+                        </p>
+                        <a href="#instruction">Let's <span>Learn</span>!</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="instruction" class="instruction">
+                <h1><span>How</span> To Use</h1>
+                <p>
+                    Below there are food recipes in the form of cards, on each
+                    card there will be a picture, food name, description and
+                    button. press the <span>button</span> when you want to
+                    display the recipe recipe
+                </p>
+                <h3>Enjoy your <span>cooking</span> time</h3>
+                <div class="links">
+                    <a href="#Japanese">🇯🇵 Japan Foods</a>
+                    <a href="#American">🇺🇸 American Foods</a>
+                    <a href="#Korean">🇰🇷 Korean Foods</a>
+                </div>
+            </section>
+
+            <section class="foodsRecipe" id="Japanese">
+                <h2><span>Japanese</span> Foods</h2>
+                <div class="contents">
+                    <div class="content">
+                        <img
+                            data-author="www.freepik.com/author/freepik"
+                            src="./images/recipe/Japanese_Foods/onigiri (freepik freepik).jpg"
+                            alt="onigiri image"
+                        />
+                        <h4>Onigiri</h4>
+                        <button
+                            id="onigiri"
+                            class="show-recipe-btn"
+                            type="button"
+                        >
+                            Show Recipe
+                        </button>
+                        <p>
+                            Onigiri is a traditional Japanese rice ball, often
+                            shaped into a triangle or cylinder. It is typically
+                            wrapped in nori (seaweed) and may have a filling
+                            such as pickled plum (umeboshi), salted salmon, or
+                            other ingredients.
+                        </p>
+                        <div id="onigiri" class="recipe">
+                            <div class="wrapper">
+                                <h2>Onigiri <span>Recipe</span></h2>
+                                <div class="ingridient">
+                                    <p>
+                                        - 2 cups of cooked Japanese rice (sushi
+                                        rice)
+                                    </p>
+                                    <p>- Salt to taste</p>
+                                    <p>- Black sesame seeds for springkling</p>
+                                    <p>- Nori (seawed)</p>
+                                </div>
+                                <div class="how-to-make">
+                                    <p>
+                                        1. Cook the Japanese rice until done.
+                                        Allow the rice to cool slightly so it is
+                                        warm but manageable to handle.
+                                    </p>
+                                    <p>
+                                        2. Wet your hands with water and
+                                        sprinkle a bit of salt on your palms.
+                                        Take a handful of rice and shape it into
+                                        a triangle or round ball, according to
+                                        your preference.
+                                    </p>
+                                    <p>
+                                        3. Attach a strip of nori to the bottom
+                                        of the onigiri.
+                                    </p>
+                                    <p>
+                                        4. Place the onigiri on a plate or
+                                        serving board and serve.
+                                    </p>
+                                </div>
+                                <button type="button" class="close">
+                                    CLOSE!
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <img
+                            data-author="www.pexels.com/@makafood-82669418/"
+                            src="./images/recipe/Japanese_Foods/miso_soup (makafood-82669418 pexel).jpg"
+                            alt="miso soup image"
+                        />
+                        <h4>Miso Soup</h4>
+                        <button
+                            id="misoSoup"
+                            class="show-recipe-btn"
+                            type="button"
+                        >
+                            Show Recipe
+                        </button>
+                        <p>
+                            Miso soup is a traditional Japanese soup made from a
+                            stock called "dashi," which is combined with miso
+                            paste (fermented soybean paste). It often includes
+                            ingredients like tofu, seaweed, and green onions.
+                            Miso soup is commonly served as a side dish in
+                            Japanese cuisine.
+                        </p>
+                        <div id="misoSoup" class="recipe">
+                            <div class="wrapper">
+                                <h2>Miso Soup <span>Recipe</span></h2>
+                                <div class="ingridient">
+                                    <p>- 4 cups dashi (Japanese soup stock)</p>
+                                    <p>- 3 tablespoons miso paste</p>
+                                    <p>- 1/2 cup tofu, cut into small cubes</p>
+                                    <p>
+                                        - 1/4 cup wakame seaweed, soaked and
+                                        drained
+                                    </p>
+                                    <p>
+                                        - Optional: mushrooms, shrimp, or other
+                                        vegetables
+                                    </p>
+                                </div>
+                                <div class="how-to-make">
+                                    <p>
+                                        1. Heat the dashi in a pot over medium
+                                        heat until it just begins to simmer.
+                                        After that add the tofu and wakame
+                                        seaweed to the pot.
+                                    </p>
+                                    <p>
+                                        2. Wet your hands with water and
+                                        sprinkle a bit of salt on your palms.
+                                        Take a handful of rice and shape it into
+                                        a triangle or round ball, according to
+                                        your preference.
+                                    </p>
+                                    <p>
+                                        3. In a small bowl, dissolve the miso
+                                        paste with a ladleful of the hot dashi,
+                                        then add the dissolved miso back into
+                                        the pot. Stir gently and heat through,
+                                        but do not let the soup boil.
+                                    </p>
+                                    <p>
+                                        4. Add the green onions just before
+                                        serving.
+                                    </p>
+                                    <p>
+                                        5. Serve hot, optionally garnished with
+                                        mushrooms or shrimp.
+                                    </p>
+                                </div>
+                                <button type="button" class="close">
+                                    CLOSE!
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <img
+                            data-author="www.pexels.com/@makafood-82669418/"
+                            src="./images/recipe/Japanese_Foods/gyuudon(takedahrs-12657 pixabay).jpg"
+                            alt="gyudon image"
+                        />
+                        <h4>G<span>yu</span>don</h4>
+                        <button
+                            id="gyudon"
+                            class="show-recipe-btn"
+                            type="button"
+                        >
+                            Show Recipe
+                        </button>
+                        <p>
+                            Gyudon is a popular Japanese dish consisting of a
+                            bowl of rice topped with thinly sliced beef and
+                            onions that have been simmered in a mildly sweet
+                            sauce made from soy sauce, mirin, and dashi. The
+                            name "gyudon" translates to "beef bowl."
+                        </p>
+                        <div id="gyudon" class="recipe">
+                            <div class="wrapper">
+                                <h2>Tamago Yaki <span>Recipe</span></h2>
+                                <div class="ingridient">
+                                    <p>
+                                        - 1 lb (450g) thinly sliced beef
+                                        (preferably ribeye or chuck)
+                                    </p>
+                                    <p>- 1 large onion, thinly sliced</p>
+                                    <p>- 2 cups cooked Japanese rice</p>
+                                    <p>- 1/2 cup soy sauce</p>
+                                    <p>- 1/2 cup mirin</p>
+                                    <p>- 1/2 cup sake</p>
+                                    <p>
+                                        - Pickled ginger (beni shoga) for
+                                        garnish (optional) Chopped green onions
+                                        for garnish (optional)
+                                    </p>
+                                </div>
+                                <div class="how-to-make">
+                                    <p>
+                                        1. In a medium-sized pot, combine the
+                                        soy sauce, mirin, sake, dashi, and
+                                        sugar. Bring to a simmer over medium
+                                        heat.
+                                    </p>
+                                    <p>
+                                        2. Add the sliced onions to the pot and
+                                        cook until they become translucent.
+                                    </p>
+                                    <p>
+                                        3. Add the beef slices, stirring gently
+                                        until the beef is cooked through.
+                                    </p>
+                                    <p>
+                                        4. Place a portion of cooked rice in a
+                                        bowl. Top the rice with the cooked beef
+                                        and onions.
+                                    </p>
+                                    <p>
+                                        5. Pour some of the sauce from the pot
+                                        over the beef and rice.
+                                    </p>
+                                    <p>
+                                        6. Garnish with pickled ginger and
+                                        chopped green onions, if desired. After
+                                        that serve hot.
+                                    </p>
+                                </div>
+                                <button type="button" class="close">
+                                    CLOSE!
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <img
+                            data-author="www.pexels.com/@makafood-82669418/"
+                            src="./images/recipe/Japanese_Foods/tamago_yaki (grissphoto unsplash).jpg"
+                            alt="tamago yaki image"
+                        />
+                        <h4>Tamago <span>Yaki</span></h4>
+                        <button
+                            id="tamagoyaki"
+                            class="show-recipe-btn"
+                            type="button"
+                        >
+                            Show Recipe
+                        </button>
+                        <p>
+                            tamagoyaki, is a type of Japanese omelette made by
+                            rolling together several thin layers of seasoned
+                            egg. It is often sweetened with sugar and flavored
+                            with mirin and soy sauce. Tamagoyaki is commonly
+                            served as a breakfast dish, in bento boxes, or as a
+                            topping for sushi.
+                        </p>
+                        <div id="tamagoyaki" class="recipe">
+                            <div class="wrapper">
+                                <h2>Tamago Yaki <span>Recipe</span></h2>
+                                <div class="ingridient">
+                                    <p>- 4 Eggs</p>
+                                    <p>- 2 tablespoons dashi</p>
+                                    <p>- 1 tablespoon soy sauce</p>
+                                    <p>- 1 tablespoon mirin</p>
+                                    <p>- 1 teaspoon sugar</p>
+                                    <p>- Oil for frying</p>
+                                    <p>
+                                        Optional: red bell pepper, finely
+                                        chopped
+                                    </p>
+                                </div>
+                                <div class="how-to-make">
+                                    <p>
+                                        1. In a bowl, beat the eggs and add
+                                        dashi, soy sauce, mirin, and sugar. Mix
+                                        well.
+                                    </p>
+                                    <p>
+                                        2. Heat a rectangular tamago pan (or a
+                                        regular frying pan) over medium heat and
+                                        lightly oil it. Pour a thin layer of the
+                                        egg mixture into the pan, tilting to
+                                        spread it evenly. Add a small amount of
+                                        chopped red bell pepper if desired.
+                                    </p>
+                                    <p>
+                                        3. When the egg starts to set, roll it
+                                        from one side to the other using
+                                        chopsticks or a spatula. Push the rolled
+                                        egg to one side of the pan and pour
+                                        another thin layer of egg mixture into
+                                        the pan, lifting the rolled egg to let
+                                        the uncooked egg flow underneath.
+                                    </p>
+                                    <p>
+                                        4. Repeat the process until all the egg
+                                        mixture is used, creating a
+                                        multi-layered omelette. Remove from the
+                                        pan and let it cool slightly before
+                                        slicing.
+                                    </p>
+                                    <p>
+                                        5. Serve Tamago <span>yaki</span> in
+                                        slice
+                                    </p>
+                                </div>
+                                <button type="button" class="close">
+                                    CLOSE!
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <img
+                            data-author="www.pexels.com/@makafood-82669418/"
+                            src="./images/recipe/Japanese_Foods/tempura (stockking freepik).jpg"
+                            alt="tempura image"
+                        />
+                        <h4>Shrimp Tempura</h4>
+                        <button
+                            id="tempura"
+                            class="show-recipe-btn"
+                            type="button"
+                        >
+                            Show Recipe
+                        </button>
+                        <p>
+                            Shrim Tempura is a Japanese dish that are lightly
+                            battered and deep-fried to achieve a crispy texture.
+                            Shrimp tempura is often served with a dipping sauce
+                            called tentsuyu, made from dashi, soy sauce, and
+                            mirin, along with grated daikon radish.
+                        </p>
+                        <div id="tempura" class="recipe">
+                            <div class="wrapper">
+                                <h2>Shrimp Tempura <span>Recipe</span></h2>
+                                <div class="ingridient">
+                                    <p>
+                                        - 12 large shrimp, peeled and deveined
+                                    </p>
+                                    <p>- 1 cup all-purpose flour</p>
+                                    <p>- 1 cup ice-cold water</p>
+                                    <p>- 1 egg</p>
+                                    <p>Oil for deep frying</p>
+                                    <p>Salt to taste</p>
+                                    <p>
+                                        Dipping sauce: 1/2 cup soy sauce, 1/4
+                                        cup mirin, 1/4 cup dashi
+                                    </p>
+                                </div>
+                                <div class="how-to-make">
+                                    <p>
+                                        1. Heat oil in a deep fryer or a large
+                                        pot to 350°F (175°C).
+                                    </p>
+                                    <p>
+                                        2. In a bowl, lightly beat the egg and
+                                        mix with ice-cold water.
+                                    </p>
+                                    <p>
+                                        3. Add the flour to the egg mixture and
+                                        stir lightly until just combined. Do not
+                                        overmix; the batter should be lumpy.
+                                    </p>
+                                    <p>
+                                        4. Lightly coat the shrimp in flour,
+                                        then dip them into the batter.
+                                    </p>
+                                    <p>
+                                        5. Fry the shrimp in small batches until
+                                        golden and crispy, about 2-3 minutes.
+                                    </p>
+                                    <p>
+                                        6. Remove and drain on paper towels.
+                                        Sprinkle with a little salt. After that
+                                        serve hot with the dipping sauce made by
+                                        combining soy sauce, mirin, and dashi.
+                                    </p>
+                                </div>
+                                <button type="button" class="close">
+                                    CLOSE!
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <img
+                            data-author="www.pexels.com/@makafood-82669418/"
+                            src="./images/recipe/Japanese_Foods/karaage (windagh usnplash).jpg"
+                            alt="Karaage image"
+                        />
+                        <h4>Kara<span>age</span></h4>
+                        <button
+                            id="karaage"
+                            class="show-recipe-btn"
+                            type="button"
+                        >
+                            Show Recipe
+                        </button>
+                        <p>
+                            Karaage is a Japanese cooking technique where
+                            bite-sized pieces of meat, usually chicken, are
+                            marinated in a mixture of soy sauce, garlic, ginger,
+                            and sometimes other seasonings like sake or mirin.
+                        </p>
+                        <div id="karaage" class="recipe">
+                            <div class="wrapper">
+                                <h2>Onigiri <span>Recipe</span></h2>
+                                <div class="ingridient">
+                                    <p>
+                                        - 1 lb (450g) boneless chicken thighs,
+                                        cut into bite-sized pieces
+                                    </p>
+                                    <p>- 2 tbsp soy sauce</p>
+                                    <p>- 2 tbsp sake</p>
+                                    <p>- 1 tsp grated ginger</p>
+                                    <p>- 1 clove garlic, grated</p>
+                                    <p>
+                                        - 1/2 cup potato starch (or cornstarch)
+                                        for coating
+                                    </p>
+                                    <p>- Oil for deep frying</p>
+                                    <p>- Lemon wedges for serving (optional)</p>
+                                </div>
+                                <div class="how-to-make">
+                                    <p>
+                                        1. In a bowl, combine the soy sauce,
+                                        sake, grated ginger, and grated garlic.
+                                        Add the chicken pieces to the marinade,
+                                        mixing well to coat. Let it marinate for
+                                        at least 30 minutes.
+                                    </p>
+                                    <p>
+                                        2. Place the potato starch in a shallow
+                                        dish. Dredge each piece of marinated
+                                        chicken in the potato starch, ensuring
+                                        an even coating.
+                                    </p>
+                                    <p>
+                                        4. Heat oil in a deep fryer or large pot
+                                        to 350°F (175°C). Fry the chicken pieces
+                                        in batches until they are golden brown
+                                        and cooked through, about 5-6 minutes
+                                        per batch. Transfer the fried chicken to
+                                        a wire rack or paper towels to drain
+                                        excess oil.
+                                    </p>
+                                    <p>
+                                        5. Serve the karaage hot with lemon wedges on the side.
+                                    </p>
+                                </div>
+                                <button type="button" class="close">
+                                    CLOSE!
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="foodsRecipe" id="Korean">
+                <h2><span>Korean</span> Foods</h2>
+                <div class="contents">
+                    <div class="content">
+                        <img
+                            data-author="www.freepik.com/author/jcomp"
+                            src="./images/recipe/Korean_Foods/tteoboki(jcomp freepik).jpg"
+                            alt="tteoboki image"
+                        />
+                        <h4>Korean Tteoboki</h4>
+                        <button
+                            id="tteoboki"
+                            class="show-recipe-btn"
+                            type="button"
+                        >
+                            Show Recipe
+                        </button>
+                        <p>
+                            Tteokbokki is a popular Korean street food made from
+                            chewy rice cakes called "tteok," which are cooked in
+                            a spicy and sweet gochujang sauce. It often includes
+                            ingredients like fish cakes, boiled eggs, and
+                            vegetables.
+                        </p>
+                        <div id="tteoboki" class="recipe">
+                            <div class="wrapper">
+                                <h2>Onigiri <span>Recipe</span></h2>
+                                <div class="ingridient">
+                                    <p>
+                                        - 2 cups of cooked Japanese rice (sushi
+                                        rice)
+                                    </p>
+                                    <p>- Salt to taste</p>
+                                    <p>- Black sesame seeds for springkling</p>
+                                    <p>- Nori (seawed)</p>
+                                </div>
+                                <div class="how-to-make">
+                                    <p>
+                                        1. Cook the Japanese rice until done.
+                                        Allow the rice to cool slightly so it is
+                                        warm but manageable to handle.
+                                    </p>
+                                    <p>
+                                        2. Wet your hands with water and
+                                        sprinkle a bit of salt on your palms.
+                                        Take a handful of rice and shape it into
+                                        a triangle or round ball, according to
+                                        your preference.
+                                    </p>
+                                    <p>
+                                        4. Attach a strip of nori to the bottom
+                                        of the onigiri.
+                                    </p>
+                                    <p>
+                                        5. Place the onigiri on a plate or
+                                        serving board and serve.
+                                    </p>
+                                </div>
+                                <button type="button" class="close">
+                                    CLOSE!
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <img
+                            data-author="https://unsplash.com/@vickyng"
+                            src="./images/recipe/Korean_Foods/bibbimbab(vickyng unsplash).jpg"
+                            alt="bibbimbab image"
+                        />
+                        <h4>Bibbimbab</h4>
+                        <button
+                            id="bibbimbab"
+                            class="show-recipe-btn"
+                            type="button"
+                        >
+                            Show Recipe
+                        </button>
+                        <p>
+                            Bibimbap is a traditional Korean dish that
+                            translates to "mixed rice." It consists of a bowl of
+                            warm rice topped with various ingredients such as
+                            vegetables, marinated beef (or other proteins), a
+                            fried egg, and gochujang. The dish is mixed
+                            thoroughly before eating, blending the flavors and
+                            textures of the ingredients.
+                        </p>
+                        <div id="bibbimbab" class="recipe">
+                            <div class="wrapper">
+                                <h2>Onigiri <span>Recipe</span></h2>
+                                <div class="ingridient">
+                                    <p>
+                                        - 2 cups of cooked Japanese rice (sushi
+                                        rice)
+                                    </p>
+                                    <p>- Salt to taste</p>
+                                    <p>- Black sesame seeds for springkling</p>
+                                    <p>- Nori (seawed)</p>
+                                </div>
+                                <div class="how-to-make">
+                                    <p>
+                                        1. Cook the Japanese rice until done.
+                                        Allow the rice to cool slightly so it is
+                                        warm but manageable to handle.
+                                    </p>
+                                    <p>
+                                        2. Wet your hands with water and
+                                        sprinkle a bit of salt on your palms.
+                                        Take a handful of rice and shape it into
+                                        a triangle or round ball, according to
+                                        your preference.
+                                    </p>
+                                    <p>
+                                        4. Attach a strip of nori to the bottom
+                                        of the onigiri.
+                                    </p>
+                                    <p>
+                                        5. Place the onigiri on a plate or
+                                        serving board and serve.
+                                    </p>
+                                </div>
+                                <button type="button" class="close">
+                                    CLOSE!
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <img
+                            data-author="https://unsplash.com/@goodeats_yqr"
+                            src="./images/recipe/Korean_Foods/japchae(goodeats_yqr unsplash).jpg"
+                            alt="japchae image"
+                        />
+                        <h4>Japchae</h4>
+                        <button
+                            id="japchae"
+                            class="show-recipe-btn"
+                            type="button"
+                        >
+                            Show Recipe
+                        </button>
+                        <p>
+                            Japchae is a popular Korean dish made from
+                            stir-fried glass noodles (made from sweet potato
+                            starch), mixed with various vegetables such as
+                            spinach, carrots, mushrooms, and onions. It's often
+                            flavored with soy sauce, sesame oil, and a bit of
+                            sugar.
+                        </p>
+                        <div id="japchae" class="recipe">
+                            <div class="wrapper">
+                                <h2>Onigiri <span>Recipe</span></h2>
+                                <div class="ingridient">
+                                    <p>
+                                        - 2 cups of cooked Japanese rice (sushi
+                                        rice)
+                                    </p>
+                                    <p>- Salt to taste</p>
+                                    <p>- Black sesame seeds for springkling</p>
+                                    <p>- Nori (seawed)</p>
+                                </div>
+                                <div class="how-to-make">
+                                    <p>
+                                        1. Cook the Japanese rice until done.
+                                        Allow the rice to cool slightly so it is
+                                        warm but manageable to handle.
+                                    </p>
+                                    <p>
+                                        2. Wet your hands with water and
+                                        sprinkle a bit of salt on your palms.
+                                        Take a handful of rice and shape it into
+                                        a triangle or round ball, according to
+                                        your preference.
+                                    </p>
+                                    <p>
+                                        4. Attach a strip of nori to the bottom
+                                        of the onigiri.
+                                    </p>
+                                    <p>
+                                        5. Place the onigiri on a plate or
+                                        serving board and serve.
+                                    </p>
+                                </div>
+                                <button type="button" class="close">
+                                    CLOSE!
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <img
+                            data-author="www.freepik.com/author/jcomp"
+                            src="./images/recipe/Korean_Foods/kimbab(jcomp freepik).jpg"
+                            alt="kimbab image"
+                        />
+                        <h4>Kimbab</h4>
+                        <button
+                            id="kimbab"
+                            class="show-recipe-btn"
+                            type="button"
+                        >
+                            Show Recipe
+                        </button>
+                        <p>
+                            Kimbap, also spelled as gimbap, is a Korean dish
+                            made by rolling steamed rice and various ingredients
+                            in dried seaweed sheets (nori). The rice is
+                            typically seasoned with sesame oil and salt, and
+                            common fillings include spinach, carrots, and
+                            cucumbers, along with egg strips, imitation crab
+                            meat, and sometimes beef or tuna.
+                        </p>
+                        <div id="kimbab" class="recipe">
+                            <div class="wrapper">
+                                <h2>Onigiri <span>Recipe</span></h2>
+                                <div class="ingridient">
+                                    <p>
+                                        - 2 cups of cooked Japanese rice (sushi
+                                        rice)
+                                    </p>
+                                    <p>- Salt to taste</p>
+                                    <p>- Black sesame seeds for springkling</p>
+                                    <p>- Nori (seawed)</p>
+                                </div>
+                                <div class="how-to-make">
+                                    <p>
+                                        1. Cook the Japanese rice until done.
+                                        Allow the rice to cool slightly so it is
+                                        warm but manageable to handle.
+                                    </p>
+                                    <p>
+                                        2. Wet your hands with water and
+                                        sprinkle a bit of salt on your palms.
+                                        Take a handful of rice and shape it into
+                                        a triangle or round ball, according to
+                                        your preference.
+                                    </p>
+                                    <p>
+                                        4. Attach a strip of nori to the bottom
+                                        of the onigiri.
+                                    </p>
+                                    <p>
+                                        5. Place the onigiri on a plate or
+                                        serving board and serve.
+                                    </p>
+                                </div>
+                                <button type="button" class="close">
+                                    CLOSE!
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="foodsRecipe" id="American">
+                <h2><span>American</span> Foods</h2>
+                <div class="contents">
+                    <div class="content">
+                        <img
+                            data-author="https://unsplash.com/@phototastyfood"
+                            src="./images/recipe/American_Foods/hamburger(phototastyfood unsplash).jpg"
+                            alt="hamburger image"
+                        />
+                        <h4>Hamburger</h4>
+                        <button
+                            id="hamburger"
+                            class="show-recipe-btn"
+                            type="button"
+                        >
+                            Show Recipe
+                        </button>
+                        <p>
+                            hamburger is a popular sandwich consisting of a
+                            cooked patty of ground meat, usually beef, placed
+                            inside a sliced bread roll or bun. It often includes
+                            additional ingredients such as lettuce, tomato,
+                            cheese, pickles, onions, and condiments like
+                            ketchup, mustard, and mayonnaise.
+                        </p>
+                        <div id="hamburger" class="recipe">
+                            <div class="wrapper">
+                                <h2>Onigiri <span>Recipe</span></h2>
+                                <div class="ingridient">
+                                    <p>
+                                        - 2 cups of cooked Japanese rice (sushi
+                                        rice)
+                                    </p>
+                                    <p>- Salt to taste</p>
+                                    <p>- Black sesame seeds for springkling</p>
+                                    <p>- Nori (seawed)</p>
+                                </div>
+                                <div class="how-to-make">
+                                    <p>
+                                        1. Cook the Japanese rice until done.
+                                        Allow the rice to cool slightly so it is
+                                        warm but manageable to handle.
+                                    </p>
+                                    <p>
+                                        2. Wet your hands with water and
+                                        sprinkle a bit of salt on your palms.
+                                        Take a handful of rice and shape it into
+                                        a triangle or round ball, according to
+                                        your preference.
+                                    </p>
+                                    <p>
+                                        4. Attach a strip of nori to the bottom
+                                        of the onigiri.
+                                    </p>
+                                    <p>
+                                        5. Place the onigiri on a plate or
+                                        serving board and serve.
+                                    </p>
+                                </div>
+                                <button type="button" class="close">
+                                    CLOSE!
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <img
+                            data-author="https://unsplash.com/@nikldn"
+                            src="./images/recipe/American_Foods/pancake(nikldn unsplash).jpg"
+                            alt="pancake image"
+                        />
+                        <h4>Pancake</h4>
+                        <button
+                            id="pancake"
+                            class="show-recipe-btn"
+                            type="button"
+                        >
+                            Show Recipe
+                        </button>
+                        <p>
+                            pancake is a flat, round cake made from a batter of
+                            flour, milk, eggs, and a leavening agent like baking
+                            powder. The batter is poured onto a hot griddle or
+                            frying pan and cooked until golden brown on both
+                            sides.
+                        </p>
+                        <div id="pancake" class="recipe">
+                            <div class="wrapper">
+                                <h2>Onigiri <span>Recipe</span></h2>
+                                <div class="ingridient">
+                                    <p>
+                                        - 2 cups of cooked Japanese rice (sushi
+                                        rice)
+                                    </p>
+                                    <p>- Salt to taste</p>
+                                    <p>- Black sesame seeds for springkling</p>
+                                    <p>- Nori (seawed)</p>
+                                </div>
+                                <div class="how-to-make">
+                                    <p>
+                                        1. Cook the Japanese rice until done.
+                                        Allow the rice to cool slightly so it is
+                                        warm but manageable to handle.
+                                    </p>
+                                    <p>
+                                        2. Wet your hands with water and
+                                        sprinkle a bit of salt on your palms.
+                                        Take a handful of rice and shape it into
+                                        a triangle or round ball, according to
+                                        your preference.
+                                    </p>
+                                    <p>
+                                        4. Attach a strip of nori to the bottom
+                                        of the onigiri.
+                                    </p>
+                                    <p>
+                                        5. Place the onigiri on a plate or
+                                        serving board and serve.
+                                    </p>
+                                </div>
+                                <button type="button" class="close">
+                                    CLOSE!
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <img
+                            data-author="https://unsplash.com/@jessicaloaizar"
+                            src="./images/recipe/American_Foods/hotdog(jessicaloaizar unsplash).jpg"
+                            alt="hotdof image"
+                        />
+                        <h4><span>Hot</span>Dog</h4>
+                        <button
+                            id="hotdog"
+                            class="show-recipe-btn"
+                            type="button"
+                        >
+                            Show Recipe
+                        </button>
+                        <p>
+                            hot dog is a type of sandwich that consists of a
+                            grilled or steamed sausage, usually made from pork,
+                            beef, or a combination of both, served in a sliced
+                            bread roll. It is often garnished with condiments
+                            like mustard, ketchup, relish, onions, and
+                            sauerkraut.
+                        </p>
+                        <div id="hotdog" class="recipe">
+                            <div class="wrapper">
+                                <h2>Onigiri <span>Recipe</span></h2>
+                                <div class="ingridient">
+                                    <p>
+                                        - 2 cups of cooked Japanese rice (sushi
+                                        rice)
+                                    </p>
+                                    <p>- Salt to taste</p>
+                                    <p>- Black sesame seeds for springkling</p>
+                                    <p>- Nori (seawed)</p>
+                                </div>
+                                <div class="how-to-make">
+                                    <p>
+                                        1. Cook the Japanese rice until done.
+                                        Allow the rice to cool slightly so it is
+                                        warm but manageable to handle.
+                                    </p>
+                                    <p>
+                                        2. Wet your hands with water and
+                                        sprinkle a bit of salt on your palms.
+                                        Take a handful of rice and shape it into
+                                        a triangle or round ball, according to
+                                        your preference.
+                                    </p>
+                                    <p>
+                                        4. Attach a strip of nori to the bottom
+                                        of the onigiri.
+                                    </p>
+                                    <p>
+                                        5. Place the onigiri on a plate or
+                                        serving board and serve.
+                                    </p>
+                                </div>
+                                <button type="button" class="close">
+                                    CLOSE!
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <img
+                            data-author="https://unsplash.com/@lucaslafotografia"
+                            src="./images/recipe/American_Foods/fried_chicken(lucaslafotografia unsplash).jpg"
+                            alt="fried chicken image"
+                        />
+                        <h4><span>Fried</span> Chicken</h4>
+                        <button
+                            id="friedChicken"
+                            class="show-recipe-btn"
+                            type="button"
+                        >
+                            Show Recipe
+                        </button>
+                        <p>
+                            Fried chicken is a dish consisting of chicken pieces
+                            that have been coated in a seasoned breading or
+                            batter and then deep-fried until crispy and golden
+                            brown. It is known for its crunchy exterior and
+                            juicy, tender meat.
+                        </p>
+                        <div id="friedChicken" class="recipe">
+                            <div class="wrapper">
+                                <h2>Onigiri <span>Recipe</span></h2>
+                                <div class="ingridient">
+                                    <p>
+                                        - 2 cups of cooked Japanese rice (sushi
+                                        rice)
+                                    </p>
+                                    <p>- Salt to taste</p>
+                                    <p>- Black sesame seeds for springkling</p>
+                                    <p>- Nori (seawed)</p>
+                                </div>
+                                <div class="how-to-make">
+                                    <p>
+                                        1. Cook the Japanese rice until done.
+                                        Allow the rice to cool slightly so it is
+                                        warm but manageable to handle.
+                                    </p>
+                                    <p>
+                                        2. Wet your hands with water and
+                                        sprinkle a bit of salt on your palms.
+                                        Take a handful of rice and shape it into
+                                        a triangle or round ball, according to
+                                        your preference.
+                                    </p>
+                                    <p>
+                                        4. Attach a strip of nori to the bottom
+                                        of the onigiri.
+                                    </p>
+                                    <p>
+                                        5. Place the onigiri on a plate or
+                                        serving board and serve.
+                                    </p>
+                                </div>
+                                <button type="button" class="close">
+                                    CLOSE!
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <img
+                            data-author="https://unsplash.com/@scotteckersley"
+                            src="./images/recipe/American_Foods/buffalo_wings(scotteckersley unsplash).jpg"
+                            alt="buffalo wings image"
+                        />
+                        <h4><span>Buffalo</span> Wings</h4>
+                        <button
+                            id="buffaloWings"
+                            class="show-recipe-btn"
+                            type="button"
+                        >
+                            Show Recipe
+                        </button>
+                        <p>
+                            Buffalo wings are a type of American appetizer
+                            consisting of deep-fried chicken wings coated in a
+                            spicy sauce made from a combination of hot sauce,
+                            butter, and other seasonings.
+                        </p>
+                        <div id="buffaloWings" class="recipe">
+                            <div class="wrapper">
+                                <h2>Onigiri <span>Recipe</span></h2>
+                                <div class="ingridient">
+                                    <p>
+                                        - 2 cups of cooked Japanese rice (sushi
+                                        rice)
+                                    </p>
+                                    <p>- Salt to taste</p>
+                                    <p>- Black sesame seeds for springkling</p>
+                                    <p>- Nori (seawed)</p>
+                                </div>
+                                <div class="how-to-make">
+                                    <p>
+                                        1. Cook the Japanese rice until done.
+                                        Allow the rice to cool slightly so it is
+                                        warm but manageable to handle.
+                                    </p>
+                                    <p>
+                                        2. Wet your hands with water and
+                                        sprinkle a bit of salt on your palms.
+                                        Take a handful of rice and shape it into
+                                        a triangle or round ball, according to
+                                        your preference.
+                                    </p>
+                                    <p>
+                                        4. Attach a strip of nori to the bottom
+                                        of the onigiri.
+                                    </p>
+                                    <p>
+                                        5. Place the onigiri on a plate or
+                                        serving board and serve.
+                                    </p>
+                                </div>
+                                <button type="button" class="close">
+                                    CLOSE!
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <img
+                            data-author="https://unsplash.com/@bogzilla"
+                            src="./images/recipe/American_Foods/bbq_ribs(bogzilla unsplash).jpg"
+                            alt="bbq ribs image"
+                        />
+                        <h4><span>BBQ</span> Ribs</h4>
+                        <button
+                            id="bbqRibs"
+                            class="show-recipe-btn"
+                            type="button"
+                        >
+                            Show Recipe
+                        </button>
+                        <p>
+                            BBQ ribs are a popular American dish made from pork
+                            or beef ribs that are slow-cooked and then coated
+                            with a flavorful barbecue sauce. The ribs are
+                            typically seasoned with a dry rub before being
+                            smoked, grilled, or baked, which makes the meat
+                            tender and imbued with a rich, smoky flavor.
+                        </p>
+                        <div id="bbqRibs" class="recipe">
+                            <div class="wrapper">
+                                <h2>Onigiri <span>Recipe</span></h2>
+                                <div class="ingridient">
+                                    <p>
+                                        - 2 cups of cooked Japanese rice (sushi
+                                        rice)
+                                    </p>
+                                    <p>- Salt to taste</p>
+                                    <p>- Black sesame seeds for springkling</p>
+                                    <p>- Nori (seawed)</p>
+                                </div>
+                                <div class="how-to-make">
+                                    <p>
+                                        1. Cook the Japanese rice until done.
+                                        Allow the rice to cool slightly so it is
+                                        warm but manageable to handle.
+                                    </p>
+                                    <p>
+                                        2. Wet your hands with water and
+                                        sprinkle a bit of salt on your palms.
+                                        Take a handful of rice and shape it into
+                                        a triangle or round ball, according to
+                                        your preference.
+                                    </p>
+                                    <p>
+                                        4. Attach a strip of nori to the bottom
+                                        of the onigiri.
+                                    </p>
+                                    <p>
+                                        5. Place the onigiri on a plate or
+                                        serving board and serve.
+                                    </p>
+                                </div>
+                                <button type="button" class="close">
+                                    CLOSE!
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="creator">
+                <h2>About <span>Creator</span></h2>
+                <p>
+                    Hi, i'am Reza Creator of this page, i'am 19, from indonesia
+                </p>
+                <p>
+                    i create "code" this web page using phone, if you seen any
+                    bug or something please contact me on
+                </p>
+                <h3>
+                    <a href="shikikun00.github.io">My Personal Web Page</a>
+                </h3>
+            </footer>
+
+            <div class="modal-box-author">
+                <h4>
+                    Image From:
+                    <hr />
+                    <a href="https://"> </a>
+                </h4>
+                <button
+                    class="close-modal-box"
+                    data-feather="x"
+                    type="button"
+                ></button>
+            </div>
+        </div>
+
+        <!-- feather icon -->
+        <script>
+            feather.replace();
+        </script>
+
+        <!-- script -->
+        <script src="./main.js" type="text/javascript" charset="utf-8"></script>
+    </body>
 </html>
