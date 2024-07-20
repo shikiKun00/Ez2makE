@@ -1,20 +1,18 @@
-const container = document.querySelector(".container");
-
-const navbar = container.querySelector("navbar");
+const navbar = document.querySelector("navbar");
 const navLinks = navbar.querySelector(".navLinks");
 const opnNavBtn = navbar.querySelector(".opnNavBtn");
 
-const foodsRecipe = container.querySelectorAll(".foodsRecipe");
+const section = document.querySelectorAll("section");
 
-const showRecipeBtn = container.querySelectorAll(".show-recipe-btn");
-const recipeModalBox = container.querySelectorAll(".recipe");
-const closeModalRecipeBox = container.querySelectorAll(".close");
+const showRecipeBtn = document.querySelectorAll(".show-recipe-btn");
+const recipeModalBox = document.querySelectorAll(".recipe");
+const closeModalRecipeBox = document.querySelectorAll(".close");
 
-const modalBoxAuthor = container.querySelector(".modal-box-author");
+const modalBoxAuthor = document.querySelector(".modal-box-author");
 let link = modalBoxAuthor.querySelector("a");
 const closeModalBox = modalBoxAuthor.querySelector(".close-modal-box");
 
-const image = container.querySelectorAll("img");
+const image = document.querySelectorAll("img");
 
 opnNavBtn.addEventListener("click", () => {
     navLinks.classList.toggle("active");
@@ -42,7 +40,6 @@ closeModalBox.addEventListener("click", () => {
 
 window.addEventListener("load", () => {
     navLinks.style.top = navbar.clientHeight + "px";
-    container.style.paddingTop = navbar.clientHeight + "px";
 
     image.forEach(img => {
         img.addEventListener("click", () => {
@@ -53,8 +50,8 @@ window.addEventListener("load", () => {
         });
     });
 
-    foodsRecipe.forEach(el => {
-        el.style.paddingTop = navbar.clientHeight + 30 + "px";
+    section.forEach(el => {
+        el.style.paddingTop = navbar.clientHeight + "px";
     });
 });
 
@@ -66,10 +63,7 @@ window.addEventListener("scroll", () => {
 });
 
 document.addEventListener("click", function (e) {
-    if (
-        !opnNavBtn.contains(e.target) &&
-        !navLinks.contains(e.target)
-    ) {
+    if (!opnNavBtn.contains(e.target) && !navLinks.contains(e.target)) {
         navLinks.classList.remove("active");
     }
 });

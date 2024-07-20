@@ -1,4 +1,10 @@
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
+    :root {
+        font-size: 29px;
+    }
+}
+
+@media (min-width: 1012px) {
     :root {
         font-size: 25px;
     }
@@ -14,9 +20,9 @@
         width: 100%;
         position: static;
         display: flex;
-        column-gap: 0.5rem;
+        column-gap: 0.7rem;
         flex-grow: 1;
-        padding: 0 0.5rem;
+        padding: 0 0.4rem;
         font-size: 0.7rem;
         text-align: center;
         justify-content: end;
@@ -40,17 +46,38 @@
 
     .hero .main-text {
         height: 100%;
+        display: grid;
+        justify-items: center;
+        align-items: center;
     }
-    
+
+    .hero .main-text .wrapper {
+        max-width: 65%;
+    }
+
     .instruction {
-        padding-right: 3rem;
-        padding-left: 3rem;
+        padding: 5rem 3rem;
     }
-    
+
     .container section.foodsRecipe .contents {
         align-items: center;
         justify-items: center;
         column-gap: 0.5rem;
         grid-template-columns: 0.8fr 0.8fr;
+    }
+}
+
+@media (min-width: 1338px) {
+    :root {
+        font-size: 25px;
+    }
+
+    .hero .main-text {
+        bottom: 0%;
+        padding-top: 6rem;
+    }
+
+    .container section.foodsRecipe .contents {
+        column-gap: 1.5rem;
     }
 }
