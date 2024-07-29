@@ -44,7 +44,10 @@ window.addEventListener("load", () => {
     image.forEach(img => {
         img.addEventListener("click", () => {
             modalBoxAuthor.style.top = navbar.clientHeight + "px";
+            
+            link.href = "https://"
             link.href += img.dataset.author;
+            
             link.textContent = img.dataset.author;
             modalBoxAuthorOpened = true;
         });
