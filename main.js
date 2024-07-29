@@ -47,9 +47,10 @@ window.addEventListener("load", () => {
             
             link.href = "https://"
             link.href += img.dataset.author;
-            
+
             link.textContent = img.dataset.author;
             modalBoxAuthorOpened = true;
+            console.log(link.href);
         });
     });
 
