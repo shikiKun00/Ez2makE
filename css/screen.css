@@ -39,7 +39,7 @@
     }
 
     .hero {
-        height: 550px;
+        height: 850px;
         overflow: hidden;
         font-size: 3rem;
     }
@@ -72,6 +72,10 @@
         font-size: 25px;
     }
 
+    .hero {
+        height: 990px;
+    }
+
     .hero .main-text {
         bottom: 0%;
         padding-top: 6rem;
@@ -79,5 +83,9 @@
 
     .container section.foodsRecipe .contents {
         column-gap: 1.5rem;
+    }
+
+    .container section.foodsRecipe .contents img {
+        height: 450px;
     }
 }

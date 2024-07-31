@@ -16,7 +16,7 @@ img {
 a,
 button {
     color: inherit;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-family: inherit;
 }
 
@@ -24,7 +24,7 @@ button {
     --background: rgb(50, 48, 79);
     --card: rgb(66, 55, 100);
     --btn: rgb(57, 38, 104);
-    --btn-light: rgb(61, 49, 128);
+    --btn-light: rgb(89, 49, 188);
     scroll-behavior: smooth;
     font-family: "Rubik";
 }
@@ -166,7 +166,8 @@ navbar .navLinks {
     border-bottom: 2px solid var(--btn);
     border-left: 2px solid var(--btn);
     transition: 0.5s;
-    background-color: rgba(66, 49, 138, 0.5);
+    backdrop-filter: blur(30px);
+    background-color: rgba(66, 49, 138, 0.9);
 }
 
 navbar .navLinks.active {
@@ -293,11 +294,12 @@ navbar .navLinks.active {
 }
 
 .modal-box-author .close-modal-box {
-    border: 2px solid var(--background);
-    color: red;
+    border: 2px solid var(--btn-light);
+    color: darkred;
     justify-self: center;
     width: 3rem;
     height: 2rem;
+    border-radius: 10px;
 }
 
 /* footer */

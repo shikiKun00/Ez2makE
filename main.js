@@ -44,18 +44,20 @@ window.addEventListener("load", () => {
     image.forEach(img => {
         img.addEventListener("click", () => {
             modalBoxAuthor.style.top = navbar.clientHeight + "px";
-            
-            link.href = "https://"
+
+            link.href = "https://";
             link.href += img.dataset.author;
 
             link.textContent = img.dataset.author;
             modalBoxAuthorOpened = true;
-            console.log(link.href);
         });
     });
 
     section.forEach(el => {
-        el.style.paddingTop = navbar.clientHeight + "px";
+        el.className === "hero"
+            ? (el.style.paddingTop = el.style.paddingTop =
+                  navbar.clientHeight + "px")
+            : (el.style.paddingTop = navbar.clientHeight + 40 + "px");
     });
 });
 
