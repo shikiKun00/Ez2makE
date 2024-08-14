@@ -14,29 +14,8 @@ const closeModalBox = modalBoxAuthor.querySelector(".close-modal-box");
 
 const image = document.querySelectorAll("img");
 
-opnNavBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-    modalBoxAuthor.style.top = -100 + "%";
-});
-
-showRecipeBtn.forEach((btn, i) => {
-    btn.addEventListener("click", () => {
-        recipeModalBox[i].style.display = "grid";
-        modalBoxAuthor.style.top = -100 + "%";
-    });
-});
-
-closeModalRecipeBox.forEach((btn, i) => {
-    btn.addEventListener("click", () => {
-        recipeModalBox[i].style.display = "none";
-    });
-});
-
-let modalBoxAuthorOpened = false;
-
-closeModalBox.addEventListener("click", () => {
-    modalBoxAuthor.style.top = -100 + "%";
-});
+const p = document.querySelectorAll("p.description");
+const readMore = document.querySelectorAll(".read-more");
 
 window.addEventListener("load", () => {
     navLinks.style.top = navbar.clientHeight + "px";
@@ -72,4 +51,51 @@ document.addEventListener("click", function (e) {
     if (!opnNavBtn.contains(e.target) && !navLinks.contains(e.target)) {
         navLinks.classList.remove("active");
     }
+});
+
+opnNavBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    modalBoxAuthor.style.top = -100 + "%";
+});
+
+showRecipeBtn.forEach((btn, i) => {
+    btn.addEventListener("click", () => {
+        recipeModalBox[i].style.display = "grid";
+        modalBoxAuthor.style.top = -100 + "%";
+    });
+});
+
+closeModalRecipeBox.forEach((btn, i) => {
+    btn.addEventListener("click", () => {
+        recipeModalBox[i].style.display = "none";
+    });
+});
+
+let modalBoxAuthorOpened = false;
+
+closeModalBox.addEventListener("click", () => {
+    modalBoxAuthor.style.top = -100 + "%";
+});
+
+function convertP() {
+    const pArrOr = [...p].map(el => el.innerText.split(" "));
+    const pArrSliced = pArrOr.map(el => {
+        el.splice(22, 0, '<span class="none">');
+        el.splice(el.length, 0, "</span>");
+        return el.join(" ");
+    });
+
+    for (let i = 0; i < pArrSliced.length; i++) {
+        p[i].innerHTML = pArrSliced[i];
+    }
+}
+
+convertP();
+
+const span = document.querySelectorAll("span.none");
+readMore.forEach((el, i) => {
+    el.addEventListener("click", () => {
+        span[i].classList.toggle("active");
+        console.log(span[i]);
+    });
 });

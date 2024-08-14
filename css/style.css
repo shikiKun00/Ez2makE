@@ -22,9 +22,9 @@ button {
 
 :root {
     --background: rgb(50, 48, 79);
-    --card: rgb(66, 55, 100);
-    --btn: rgb(57, 38, 104);
-    --btn-light: rgb(89, 49, 188);
+    --card: rgb(99, 10, 190);
+    --btn: rgb(70, 129, 250);
+    --btn-light: rgb(141, 53, 255);
     scroll-behavior: smooth;
     font-family: "Rubik";
 }
@@ -40,8 +40,16 @@ body .container {
     row-gap: 19rem;
 }
 
-body .container span {
-    color: rgb(100, 58, 249);
+body .container span.none {
+    display: none;
+}
+
+body .container p span.active {
+    display: block;
+}
+
+body .container span.color {
+    color: var(--btn-light);
 }
 
 .container section.foodsRecipe img {
@@ -199,7 +207,6 @@ navbar .navLinks.active {
 .hero .main-text p {
     font-size: 0.8rem;
     line-height: 1.1rem;
-    color: rgb(200, 200, 200);
 }
 
 .hero .main-text .wrapper a {
@@ -218,7 +225,7 @@ navbar .navLinks.active {
     display: grid;
     row-gap: 0.9rem;
     text-align: center;
-    background-color: var(--btn);
+    background-color: var(--card);
     padding: 0 1rem 1rem;
 }
 
@@ -249,9 +256,10 @@ navbar .navLinks.active {
     row-gap: 1rem;
     grid-template-areas:
         "image image"
-        "name btn"
-        "desc desc";
-    border: 2px solid var(--btn-light);
+        "name showRcp"
+        "desc desc"
+        "read-more read-more";
+    border: 2px solid var(--card);
     align-items: center;
     padding: 1.5rem;
     border-radius: 0.4rem;
@@ -267,11 +275,22 @@ navbar .navLinks.active {
 }
 
 .container section.foodsRecipe .contents .content .show-recipe-btn {
-    grid-area: btn;
+    grid-area: showRcp;
     justify-self: end;
-    padding: 0.4rem 0.6rem;
+    font-size: .8rem;
+    border: 0.1rem solid var(--btn-light);
+}
+
+.container section.foodsRecipe .contents .content button.read-more {
+    grid-area: read-more;
+    justify-self: start;
+    background: var(--card);
+}
+
+.container section.foodsRecipe .contents .content .show-recipe-btn,
+.container section.foodsRecipe .contents .content button.read-more {
+    padding: 0.2rem 0.6rem;
     border-radius: 0.3rem;
-    border: 0.15rem solid var(--btn-light);
 }
 
 .container section.foodsRecipe .contents .content p {
@@ -295,7 +314,7 @@ navbar .navLinks.active {
 
 .modal-box-author .close-modal-box {
     border: 2px solid var(--btn-light);
-    color: darkred;
+    color: red;
     justify-self: center;
     width: 3rem;
     height: 2rem;
